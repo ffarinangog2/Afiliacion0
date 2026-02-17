@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/afiliacion_db
+    url: jdbc:postgresql://postgres:5432/afiliacion_db
     username: postgres
     password: postgres
   jpa:
