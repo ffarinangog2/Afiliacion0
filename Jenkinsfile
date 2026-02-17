@@ -2,6 +2,14 @@ pipeline {
     agent any
 
     stages {
+        stage('Build Maven') {
+            steps {
+                sh 'mvn -B package'
+            }
+        }
+
+
+
         stage('Checkout') {
             steps {
                 checkout scm
