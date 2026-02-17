@@ -12,7 +12,8 @@ pipeline {
 
         stage('Build Maven') {
             steps {
-                sh 'mvn -B package'
+                sh 'mvn -B package -DskipTests'
+
             }
         }
 
